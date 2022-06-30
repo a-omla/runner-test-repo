@@ -68,3 +68,4 @@ RUN cd build && cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/install ..
 RUN cd build && make -j$(nproc)
 RUN cd build && make install
 RUN cp -r build/install/bin /build/bin/openroad -version
+
